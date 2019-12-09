@@ -1,0 +1,13 @@
+numpy
+tensorflow>=2.0
+cloudpickle
+dill
+auth
+pyro4
+cnfgen
+pymysql
+python-sat
+scipy
+pathos
+sklearn
+ray

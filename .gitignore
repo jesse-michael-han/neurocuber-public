@@ -240,3 +240,11 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+**/*~
+/__pycache__/
+/Pipfile
+cnf_data/*
+/tools/drat-trim
+z3/z3/
+/z3/sat_util.egg-info/
+/z3/dist/

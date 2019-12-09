@@ -1,0 +1,1 @@
+{"model_id": "res_grid_2_src", "mode": "cube", "ckpt_dir": "weights/res_grid_2_src/", "d": 80, "C_res_depth": 1, "C_update_depth": 1, "L_update_depth": 1, "V_proof_depth": 3, "V_core_depth": 3, "C_core_depth": 3, "n_rounds": 4, "tau": 3, "weight_reparam": true, "norm_axis": 0, "norm_eps": 0.001, "res_layers": true, "activation": "relu6", "LC_scale": 0.1, "CL_scale": 0.1}
