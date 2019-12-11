@@ -1,7 +1,9 @@
 #+TITLE: Learning cubing heuristics for SAT from DRAT proofs
 
-Steps to reproduce results from scratch:
+This repository contains code and data for the preprint [[https://jesse-michael-han.github.io/files/neurocuber-aitp2.pdf][Learning cubing heuristics for SAT from DRAT proofs]] (submitted to AITP 2020).
 
+* Reproducing results
+** Reproduce results from scratch:
 1. Clone repository to ~neurocuber-public~
 2. Enter a virtual environment with ~python>=3.6=~. From inside the virtual environment, run ~pip3 install -r requirements.txt~
 3. Install the pybind11 wrappers around Z3 by cloning https://github.com/Z3Prover/z3 to ~neurocuber-public/z3/z3/~. Adjust ~CMakeLists.txt~ according to your system and install using ~python3 setup.py install~.
@@ -10,6 +12,13 @@ Steps to reproduce results from scratch:
 6. Adjust global variables in ~config.py~ according to your system.
 4. Run ~bash reproduce_results.sh~. This will take several days; parallelize this as required.
 
-To reproduce results from trained weights, comment out the first two lines in ~reproduce_results.sh~.
+** Reproduce results from existing weights
+Follow the same steps as above, but comment out the first two lines in ~reproduce_results.sh~.
 
+** Reproduce plots and tables from existing data
 The folders ~plot_data/top1/~, ~plot_data/top3/~, and ~plot_data/playout/~ contain the data, in the form of CSVs extracted from Tensorboard summaries, which are reported in the preprint. Enter the virtual environment and run ~python data2.py --all~ from inside ~plot_data/~ to reproduce all plots and tables.
+
+* Related work
+Our architecture (~neurocuber.py~) is a re-implementation in TensorFlow 2 of the simplified NeuroSAT architecture used by [[https://github.com/dselsam/neurocore-public/][Selsam and Bjørner in NeuroCore]].
+
+There was also preliminary work by Selsam ([[https://github.com/dselsam/neurocuber/][here]]) on applying the same architecture to variable branching for cube-and-conquer (using importance sampling of paths through the DPLL search tree).
