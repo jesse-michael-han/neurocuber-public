@@ -12,4 +12,4 @@ Steps to reproduce results from scratch:
 
 To reproduce results from trained weights, comment out the first two lines in ~reproduce_results.sh~.
 
-The folders ~plot_data/top1/~, ~plot_data/top3/~, and ~plot_data/playout/~ contain the data, in the form of CSVs extracted from Tensorboard summaries, which are reported in the preprint. Enter the virtual environment and run ~python data2.py~ from inside ~plot_data/~ to reproduce all plots and tables.
+The folders ~plot_data/top1/~, ~plot_data/top3/~, and ~plot_data/playout/~ contain the data, in the form of CSVs extracted from Tensorboard summaries, which are reported in the preprint. Enter the virtual environment and run ~python data2.py --all~ from inside ~plot_data/~ to reproduce all plots and tables.
