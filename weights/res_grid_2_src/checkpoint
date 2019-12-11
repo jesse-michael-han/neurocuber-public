@@ -1,0 +1,2 @@
+model_checkpoint_path: "res_grid_2_src-10"
+all_model_checkpoint_paths: "res_grid_2_src-10"
