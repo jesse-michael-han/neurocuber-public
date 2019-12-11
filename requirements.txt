@@ -11,3 +11,5 @@ scipy
 pathos
 sklearn
 ray
+matplotlib
+pandas

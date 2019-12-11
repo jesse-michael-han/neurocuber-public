@@ -248,3 +248,11 @@ cnf_data/*
 z3/z3/
 /z3/sat_util.egg-info/
 /z3/dist/
+plot_data/plots/
+plot_data/tables/
+plot_data/test.png
+**/*rand3cnf250*
+**/*rand5cnf60*
+**/*rand7cnf38*
+**/*randkcnf*
+**/*rand7cnf37*
